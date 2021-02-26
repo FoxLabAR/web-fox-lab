@@ -1,1 +1,141 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fox Lab</title>
+</head>
+<body>
+    <div id="app">
+        <!--Barra de menu-->
+        <v-app-bar>
+            <v-container>
+                <v-avatar></v-avatar>
+                <v-btn>Inicio</v-btn>
+                <v-btn>Quienes Somos</v-btn>
+                <v-btn>Nuestro Equipo</v-btn>
+                <v-btn>Nuestros Trabajos</v-btn>
+                <v-btn>Contacto</v-btn>  
+            </v-container>
+            <!--Hacer margen de espacio para el scroll-->
+        </v-app-bar>
+        <v-main>
+            <section id="inicio">
+                <h2>BIENVENIDO</h2>
+                <v-btn>>></v-btn>
+                <v-parallax></v-parallax>
+            </section>
+            <section id="somos">
+                <v-container>
+                    <v-row>
+                        <v-col>
+                            <h2>Quienes Somos</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe, distinctio dicta soluta aliquam eaque voluptas, libero fugiat ipsa laboriosam corporis autem ea, sequi dolorem maiores? Repudiandae temporibus doloribus sunt?</p>
+                        </v-col>
+                        <v-col>
+                            <v-img></v-img>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </section>
+            <section id="equipo">
+                <h2>Nuestro Equipo</h2>
+                <v-card>
+                    <v-container>
+                        Nikolas Barroso
+                        DESIGNER
+                        <a href="">Instagram</a>
+                        <a href="">Facebook</a>
+                        <a href="">GitHub</a>
+                    </v-container>
+                </v-card>
+            </section>
+                   <section>
+                       <v-card>
+                           <v-container>
+                               Nikolas Barroso 
+                               DESIGNER
+                               Skills:
+                               <v-img>Adobe Ilustrator</v-img>
+                               <v-img>Adobe Photoshop</v-img>
+                               <v-img>Adobe Premier</v-img>
+                               <a href="Instragram/Nikolas.h17">Instagram</a>
+                               <a href="Facebook/NikolasBarroso">Facebook</a>
+                               <a href="GitHub/Fisherplay">GitHub</a>
+                            </v-container>
+                       </v-card>
+                   </section>
+            <section id="works">
+                <h2>Nuestros Trabajos</h2>
+                <v-card>Proyecto1</v-card>
+                <v-card>Proyecto2
+                    <v-img href=""></v-img>
+                </v-card>
+            </section>
+            <section id="contact">
+                <h2>Contacto</h2>
+                <v-container>
+                    <v-row>
+                        <v-col>
+                            <v-form>
+                                <v-text-field
+                                    label="Nombre"
+                                ></v-text-field>
+                                <v-text-field
+                                    label="Email"
+                                ></v-text-field>
+                                <v-text-field
+                                    label="Telefono"
+                                ></v-text-field>
+                                <v-textarea
+                                    label="Consulta"
+                                ></v-textarea>
+                                <v-btn>Enviar</v-btn>
+                            </v-form>
+                        </v-col>
+                        <v-col>
+                            <v-icon></v-icon>
+                            <h4> (+54)9 3487-511581 </h4>
+                            <v-icon></v-icon>
+                            <h4>info@foxlab.com</h4>
+                        </v-col>
+                    </v-row>
+                </v-container>
+        </v-main>
+        <!--Falta correo, facebook, instagram y google maps-->
+        <v-footer>
+            <v-container>
+                <v-row>
+                    <v-col>
+                        - by FoxLab
+                    </v-col>
+                    <v-col>
+                        <a href="https://github.com/FoxLabAR">Github</a>
+                    </v-col>
+                    <v-col>
+                        <a href="">Facebook</a>
+                    </v-col>
+                    <v-col>
+                        <a href="">Instragram</a>
+                    </v-col>
+                    <v-col>
+                        <a href="">Google Maps  </a>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script >
+                new Vue({
+                    el:'#app',
+                    vuetify: new Vuetify(),
+                    })
+    </script>
+</body>
+</html>
