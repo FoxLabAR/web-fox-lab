@@ -1,6 +1,7 @@
 new Vue({
-                    el:'#app', components:{
+                    el:'#app',
+                    components:{
 
-                    }
+                    },
                     vuetify: new Vuetify(),
                     })
