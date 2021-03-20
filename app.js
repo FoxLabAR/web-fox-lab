@@ -80,7 +80,145 @@ let Home = {
     },
 }
 
-
+let Team = {
+    template: ` <div>
+                    <div class="flap_team"></div>
+                    <v-container fluid class="text-center">
+                                <h2><span class="team_title">
+                                    NUESTRO EQUIPO
+                                </span></h2>
+                                <v-sheet tile color="#D7DBDD" width="100%">
+                                    <v-slide-group
+                                    class="pa-4"
+                                    width="100%"
+                                    >
+                                    <v-slide-item
+                                        v-for="user in users"
+                                        :key="user.full_name"
+                                    >
+                                        <v-card
+                                        class="ma-4 d-flex align-center"
+                                        min-height="350"
+                                        min-width="350"
+                                        color="#333333"
+                                        elevation="8"
+                                        >
+                                            <v-row>
+                                                <v-col>
+                                                    <v-card-titel>
+                                                        <v-avatar size="100px">
+                                                            <v-img :src="user.picture"></v-img>
+                                                        </v-avatar>
+                                                    </v-card-titel>
+                                                    <v-card-text>
+                                                        <h3 class="white--text"><span>{{user.full_name}}</span></h3>
+                                                        <h3><span class="team_card_text">{{user.position}}</span></h3> 
+                                                        <v-btn fab x-large text v-for="social in user.socials" :key="social.icon" :href="social.href">
+                                                            <v-icon color="white" x-large>{{social.icon}}</v-icon>
+                                                        </v-btn>   
+                                                    </v-card-text>
+                                                </v-col>
+                                            </v-row>
+                                        </v-card>
+                                    </v-slide-item>
+                                    </v-slide-group>
+                                </v-sheet>
+                    </v-container>
+                </div>`,
+    data() {
+        return {
+            users: [
+                {
+                    full_name: 'Fernando Barroso',
+                    position: 'CEO',
+                    picture: 'imagenes/fbarroso.jpg',
+                    socials: [
+                        { 
+                            icon: 'mdi-github',
+                            href: 'https://github.com/Ferjapolis'
+                        },
+                        {
+                            icon: 'mdi-instagram',
+                            href : 'https://www.instagram.com/ferjapolis/'
+                        }
+                    ]
+                },
+                {
+                    full_name: 'Kevin Barroso',
+                    position: 'Project Manager',
+                    picture: 'imagenes/kbarroso.jpg',
+                    socials: [
+                        { 
+                            icon: 'mdi-github',
+                            href: 'https://github.com/madara8854'
+                        },
+                        {
+                            icon: 'mdi-instagram',
+                            href : 'https://www.instagram.com/kobouharriet/'
+                        },
+                        {
+                            icon: 'mdi-facebook',
+                            href: 'https://www.facebook.com/kbarrozo'
+                        }
+                    ]
+                },
+                {
+                    full_name: 'Nicolas Ayos',
+                    position: 'Developer',
+                    picture: 'imagenes/nayos.jpg',
+                    socials: [
+                        { 
+                            icon: 'mdi-github',
+                            href: 'https://github.com/nicolasayos'
+                        },
+                        {
+                            icon: 'mdi-instagram',
+                            href : 'https://www.instagram.com/nicolasayos/'
+                        },
+                        {
+                            icon: 'mdi-facebook',
+                            href: 'https://www.facebook.com/nicolas.ayos'
+                        }
+                    ]
+                },
+                {
+                    full_name: 'Nikolas Barroso',
+                    position: 'Designer',
+                    picture: 'imagenes/nbarroso.jpg',
+                    socials: [
+                        { 
+                            icon: 'mdi-github',
+                            href: 'https://github.com/Fisherplay'
+                        },
+                        {
+                            icon: 'mdi-instagram',
+                            href : 'https://www.instagram.com/nikolas.h17/'
+                        }
+                    ]
+                },
+                {
+                    full_name: 'Lucas Nuñez',
+                    position: 'Designer',
+                    picture: 'imagenes/lnunez.jpg',
+                    socials: [
+                        { 
+                            icon: 'mdi-github',
+                            href: 'https://github.com/lucasjnunez2000'
+                        },
+                        {
+                            icon: 'mdi-instagram',
+                            href : 'https://www.instagram.com/_lucasn10/'
+                        },
+                        {
+                            icon: 'mdi-facebook',
+                            href: 'https://www.facebook.com/lucasjoel.nunez'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+}
 
 new Vue({
         el:'#app',
@@ -98,5 +236,6 @@ new Vue({
         components: {
             'app_bar': AppBar,
             'home': Home,
+            'team': Team,
         }
 })
