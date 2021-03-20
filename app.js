@@ -82,9 +82,9 @@ let Home = {
 
 let Team = {
     template: ` <div>
-                    <div class="flap_team"></div>
+                    <div class="flap team"></div>
                     <v-container fluid class="text-center">
-                                <h2><span class="team_title">
+                                <h2><span class="head">
                                     NUESTRO EQUIPO
                                 </span></h2>
                                 <v-sheet tile color="#D7DBDD" width="100%">
@@ -218,6 +218,86 @@ let Team = {
     },
 }
 
+let OurJobs = {
+    template: ` <div>
+                    <div class="flap jobs"></div>
+                    <v-container fluid class="text-center">
+                        <h2><span class="head">
+                            NUESTRO TRABAJOS
+                        </span></h2>
+                        <v-item-group>
+                            <v-row>
+                                <v-col
+                                v-for="site in sites"
+                                :key="site.name"
+                                cols="12"
+                                md="4"
+                                
+                                >
+                                <v-item v-slot="{ active, toggle }">
+                                    <v-card
+                                    height="250"
+                                    class="ma-4"
+                                    @click="toggle"
+                                    >
+                                        <v-img height="250" :src="site.pic">
+                                            <v-scroll-y-transition>
+                                                <v-card v-if="active" height="250" class="primary white--text align-center text-center">
+                                                    <v-card-title>
+                                                        <h3>{{site.name}}</h3>
+                                                    </v-card-title>        
+                                                    <v-card-text>
+                                                        <p>{{site.description}}</p>
+                                                    </v-card-text>
+                                                    <v-card-actions>
+                                                        <v-btn fab text :href="site.url" target="_blank">
+                                                            <v-icon large color="white">mdi-earth</v-icon>
+                                                        </v-btn>
+                                                    </v-card-actions>
+                                                </v-card>
+                                            </v-scroll-y-transition>
+                                        
+                                        </v-img>
+                                        
+                                    </v-card>
+                                </v-item>
+                                </v-col>
+                            </v-row>
+                        </v-item-group>
+                    </v-container>
+                </div>`,
+    data() {
+        return {
+            sites:[
+                {
+                    name: 'Nissan',
+                    description:'Fabrica de Autos',
+                    url:'https://www.nissan.co.jp/BRAND/PAVILION/',
+                    pic: '/imagenes/nissan.png'
+                },
+                {
+                    name:'Right Hemisphere',
+                    description: 'Estudio de diseño grafico',
+                    url: 'https://www.righthemisphere.in/',
+                    pic: '/imagenes/right.png'
+                },
+                {
+                    name:'Peak',
+                    description: 'Social drinks without the hangover',
+                    url: 'https://getpeak.social/',
+                    pic: '/imagenes/peak.png'
+                },
+                {
+                    name:'Nanna Lagerman',
+                    description: 'Creative studio specializing',
+                    url: 'https://nannalagerman.com/',
+                    pic: '/imagenes/nanna.png'
+                },
+            ]
+        }
+    },
+}
+
 new Vue({
         el:'#app',
         vuetify: new Vuetify({
@@ -235,5 +315,6 @@ new Vue({
             'app_bar': AppBar,
             'home': Home,
             'team': Team,
+            'ourjobs' : OurJobs,
         }
 })
