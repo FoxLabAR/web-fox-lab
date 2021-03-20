@@ -105,15 +105,13 @@ let Team = {
                                         >
                                             <v-row>
                                                 <v-col>
-                                                    <v-card-titel>
                                                         <v-avatar size="100px">
                                                             <v-img :src="user.picture"></v-img>
                                                         </v-avatar>
-                                                    </v-card-titel>
                                                     <v-card-text>
                                                         <h3 class="white--text"><span>{{user.full_name}}</span></h3>
                                                         <h3><span class="team_card_text">{{user.position}}</span></h3> 
-                                                        <v-btn fab x-large text v-for="social in user.socials" :key="social.icon" :href="social.href">
+                                                        <v-btn fab x-large text v-for="social in user.socials" :key="social.icon" :href="social.href" target="_blanck">
                                                             <v-icon color="white" x-large>{{social.icon}}</v-icon>
                                                         </v-btn>   
                                                     </v-card-text>
