@@ -39,6 +39,11 @@ span.title_2 {
     box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.25);
 }
 
+#contact {
+    background-color: #FCC31E;
+    box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.25);
+}
+
 div.flap {
     height: 50px;
     width: 50%;
@@ -71,6 +76,13 @@ div.flap.jobs {
 
 div.flap.jobs::after {
     border-bottom: 50px solid white;
+}
+
+div.flap.contact {
+    background-color: #FCC31E;
+}
+div.flap.contact::after {
+    border-bottom: 50px solid #FCC31E;
 }
 
 

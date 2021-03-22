@@ -242,19 +242,21 @@ let OurJobs = {
                                     >
                                         <v-img height="250" :src="site.pic">
                                             <v-scroll-y-transition>
-                                                <v-card v-if="active" height="250" class="primary white--text align-center text-center">
-                                                    <v-card-title>
-                                                        <h3>{{site.name}}</h3>
-                                                    </v-card-title>        
-                                                    <v-card-text>
-                                                        <p>{{site.description}}</p>
-                                                    </v-card-text>
-                                                    <v-card-actions>
-                                                        <v-btn fab text :href="site.url" target="_blank">
-                                                            <v-icon large color="white">mdi-earth</v-icon>
-                                                        </v-btn>
-                                                    </v-card-actions>
-                                                </v-card>
+                                                <v-container v-if="active"  class="text-start">
+                                                    <v-card height="200" width="250" class="primary white--text">
+                                                        <v-card-title>
+                                                            <h3 class="title">{{site.name}}</h3>
+                                                        </v-card-title> 
+                                                        <v-card-text class="pa-0 pl-8">
+                                                            <p class="subtitle_1 white--text">{{site.description}}</p>
+                                                        </v-card-text>       
+                                                        <v-card-actions>
+                                                            <v-btn fab text :href="site.url" target="_blank">
+                                                                <v-icon large color="white">mdi-earth</v-icon>
+                                                            </v-btn>
+                                                        </v-card-actions>
+                                                    </v-card>
+                                                </v-container>
                                             </v-scroll-y-transition>
                                         
                                         </v-img>
@@ -298,6 +300,45 @@ let OurJobs = {
     },
 }
 
+let Contact = {
+    template: ` <div>
+                    <div class="flap contact"></div>
+                    <v-container class="text-center">
+                        <h2><span class="head">
+                            CONTACTO
+                        </span></h2>
+                        <v-row>
+                            <v-col md="6">
+                                <v-form>
+                                    <v-text-field
+                                    label="Nombre"
+                                    required
+                                ></v-text-field>
+                                    <v-text-field
+                                    label="Email"
+                                    required
+                                ></v-text-field>
+                                    <v-text-field
+                                    label="Telefono"
+                                    required
+                                ></v-text-field>
+                                    <v-textarea
+                                    label="Consulta">
+                                    </v-textarea>
+                                    <v-btn color="primary">Enviar</v-btn>
+                                </v-form>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </div>`
+}
+
+let Footer = {
+    template: ` <div>
+                    <div class="flat footer"></div>
+                </div>`
+}
+
 new Vue({
         el:'#app',
         vuetify: new Vuetify({
@@ -316,5 +357,7 @@ new Vue({
             'home': Home,
             'team': Team,
             'ourjobs' : OurJobs,
+            'Contact' : Contact,
+            'footer' : Footer
         }
 })
