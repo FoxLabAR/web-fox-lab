@@ -308,7 +308,7 @@ let Contact = {
                             CONTACTO
                         </span></h2>
                         <v-row>
-                            <v-col md="6">
+                            <v-col md="4">
                                 <v-form>
                                     <v-text-field
                                     label="Nombre"
@@ -325,7 +325,9 @@ let Contact = {
                                     <v-textarea
                                     label="Consulta">
                                     </v-textarea>
-                                    <v-btn color="primary">Enviar</v-btn>
+                                    <v-row justify="end">
+                                        <v-btn rounded color="#434444" class="white--text">Enviar<v-icon>mdi-chevron-right</v-icon></v-btn>
+                                    </v-row>
                                 </v-form>
                             </v-col>
                         </v-row>
