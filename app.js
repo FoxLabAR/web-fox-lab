@@ -336,7 +336,62 @@ let Contact = {
 let Footer = {
     template: ` <div>
                     <div class="flat footer"></div>
-                </div>`
+                    <v-footer color="#434444">
+                        <v-card color="#434444" flat>
+                            <v-row justify="start">
+                                <v-col>
+                                    <v-list-item v-for="social in socials" :key="social.name">
+                                        <v-btn fab text color="#DB3D4B" :href="social.href" target="_blank">
+                                            <v-icon>{{social.icon}}</v-icon>
+                                        </v-btn>
+                                        <h6><span class="pa-2 white--text">{{social.name}}</span></h6>
+                                    </v-list-item>
+                                </v-col>
+                                <v-col>
+                                    <v-list-item v-for="dato in datos" :key="dato.name">
+                                            <v-icon class="pa-4" color="#DB3D4B">{{dato.icon}}</v-icon>
+                                        <h6><span class="pa-2 white--text">{{dato.name}}</span></h6>
+                                    </v-list-item>
+                                </v-col>
+                            </v-row>
+                        </v-card>
+                    </v-footer>
+                </div>`,
+    data() {
+        return {
+            socials : [
+                { 
+                    name: 'FoxLabAR',
+                    icon: 'mdi-github',
+                    href: 'https://github.com/FoxLabAR'
+                },
+                {
+                    name: '@_FoxLab_',
+                    icon: 'mdi-instagram',
+                    href : 'https://www.instagram.com/kobouharriet/'
+                },
+                {
+                    name: 'FoxLab/',
+                    icon: 'mdi-facebook',
+                    href: 'https://www.facebook.com/kbarrozo'
+                }
+            ],
+            datos: [
+                {
+                    name:'Lima, Buenos Aires',
+                    icon: 'navigation'
+                },
+                {
+                    name: 'info@foxlabs.com',
+                    icon: 'mdi-email'
+                },
+                {
+                    name: '(+54) 9 3487-511581',
+                    icon: 'mdi-phone'
+                }
+            ]
+        }
+    },
 }
 
 new Vue({
@@ -358,6 +413,6 @@ new Vue({
             'team': Team,
             'ourjobs' : OurJobs,
             'Contact' : Contact,
-            'footer' : Footer
+            'footerfox' : Footer
         }
 })
