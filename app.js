@@ -231,13 +231,13 @@ let OurJobs = {
                                 v-for="site in sites"
                                 :key="site.name"
                                 cols="12"
-                                md="4"
+                                md="3"
                                 
                                 >
                                 <v-item v-slot="{ active, toggle }">
                                     <v-card
                                     height="250"
-                                    class="ma-4"
+                                    class="ma-3"
                                     @click="toggle"
                                     >
                                         <v-img height="250" :src="site.pic">
