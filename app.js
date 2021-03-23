@@ -339,7 +339,8 @@ let Footer = {
     template: ` 
                     <v-footer color="#434444" id="footerfox">
                         <div class="flap footer"></div>
-                        <v-container color="#434444" flat>
+                        <v-container color="#434444">
+                        <h3 class="white--text">-by Fox Lab</h3>
                             <v-row justify="start">
                                 <v-col md="2">
                                     <v-img height="150" width="125" :src="pic"></v-img>
