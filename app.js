@@ -22,8 +22,16 @@ let Story = {
                                     <v-card-text>
                                         <h3></h3>
                                     </v-card-text >
-                                    <v-img src="./imagenes/resume.png"></v-img>
-                                    <v-img src="./imagenes/Portfolio.png"></v-img>
+                                    <v-row justify="center" align="center">
+                                        <v-col cols="6">
+                                            Disenamos tu pagina web o incluso tu portafolio!
+                                        </v-col>
+                                        <v-col cols="6">
+                                            <v-img id="pic_1" src="./imagenes/resume.png"></v-img>
+                                            <v-img  height="100" widht="50" src="./imagenes/Portfolio.png"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                    
                                     <v-card-text >
                                         <h3></h3>
                                     </v-card-text>
