@@ -22,13 +22,13 @@ let Story = {
                                     <v-card-text>
                                         <h3></h3>
                                     </v-card-text >
-                                    <v-img src="resume.png"></v-img>
-                                    <v-img src="Portfolio.png"></v-img>
+                                    <v-img src="./imagenes/resume.png"></v-img>
+                                    <v-img src="./imagenes/Portfolio.png"></v-img>
                                     <v-card-text >
                                         <h3></h3>
                                     </v-card-text>
-                                    <v-img src="article.png"></v-img>
-                                    <v-img src="confirmed.png"></v-img>
+                                    <v-img src="./imagenes/Article.png"></v-img>
+                                    <v-img src="./imagenes/confirmed.png"></v-img>
                                     <v-card-text >
                                         <h3></h3>
                                     </v-card-text>
