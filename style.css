@@ -88,7 +88,7 @@ div.flap.contact::after {
 div.flap.footer {
     position:absolute;
     background-color: #434444;
-    bottom: 240px;
+    bottom: 280px;
     left: 0px;
 }
 div.flap.footer::after {

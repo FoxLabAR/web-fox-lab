@@ -347,15 +347,15 @@ let Footer = {
                                 </v-col>
                                 <v-col md="5">
                                     <v-list-item v-for="social in socials" :key="social.name">
-                                        <v-btn fab text color="#DB3D4B" :href="social.href" target="_blank">
-                                            <v-icon>{{social.icon}}</v-icon>
+                                        <v-btn large fab text color="#DB3D4B" :href="social.href" target="_blank">
+                                            <v-icon large>{{social.icon}}</v-icon>
                                         </v-btn>
                                         <h6><span class="pa-2 white--text">{{social.name}}</span></h6>
                                     </v-list-item>
                                 </v-col>
                                 <v-col md="5">
                                     <v-list-item v-for="dato in datos" :key="dato.name">
-                                            <v-icon class="pa-4" color="#DB3D4B">{{dato.icon}}</v-icon>
+                                            <v-icon  large class="pa-4" color="#DB3D4B">{{dato.icon}}</v-icon>
                                         <h6><span class="pa-2 white--text">{{dato.name}}</span></h6>
                                     </v-list-item>
                                 </v-col>
