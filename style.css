@@ -1,27 +1,15 @@
-#logo {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+span.title{
+    border: solid 1px #FF9800;
 }
 
-.v-application {
-    font-family: 'Montserrat' , sans-serif;
-    font-size: 24px;
+#pic_fox {
+    opacity: 10%;
 }
 
-#home {
-    background-color: #FF9800;
-    height: 600px;
-}
-
-span.title_1 {
-    font-family: 'Oswald', sans-serif;
-    color: white;
-    font-size: 200px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-span.title_2 {
-    font-family: 'Montserrat', sans-serif;
-    color : white;
-    font-size: 50px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+#pic_1 {
+    position: relative;
+    top: 50px;
+    left: 150px;
+    height: 100px;
+    width: 220px;
 }
