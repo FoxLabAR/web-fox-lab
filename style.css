@@ -7,7 +7,7 @@ span.title{
 }
 
 section {
-    height: 800px;
+    height: 850px;
 }
 
 #home {
@@ -40,6 +40,10 @@ span.title_2 {
 
 #contact {
     background-color: #FCC31E;
+    box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.25);
+}
+
+#story {
     box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -84,10 +88,18 @@ div.flap.contact::after {
     border-bottom: 50px solid #FCC31E;
 }
 
+div.flap.whoare {
+    background-color: white;
+}
+
+div.flap.whoare::after {
+    border-bottom: 50px solid white;
+}
+
 div.flap.footer {
     position:absolute;
     background-color: #434444;
-    bottom: 280px;
+    bottom: 260px;
     left: 0px;
 }
 div.flap.footer::after {
@@ -135,6 +147,8 @@ v-card {
     font-size: 20px;
 }
 #pic_fox {
+    position: relative;
+    bottom: 100px;
     opacity: 30%;
 }
 #pic_1 {

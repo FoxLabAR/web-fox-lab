@@ -81,12 +81,13 @@ let Home = {
 
 let Story = {
     template: ` <div>
-                    <v-container class="col-container">
+                    <div class="flap whoare"></div>
+                    <v-container class="text-center">
                         <v-row justify="center" align="center">
                             <v-col>
-                                <span class="title">
-                                    <h2>SOBRE NOSOTROS</h2>
-                                </span>  
+                                <h2><span class="head">
+                                SOBRE NOSOTROS
+                                </span></h2> 
                             </v-col>
                         </v-row>
                         <v-row
@@ -151,7 +152,7 @@ let Story = {
                                     </div>
                                     <v-card-text>
                                         <v-col cols="7">
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis fugit repellendus nobis inventore corrupti sint totam, explicabo ullam quisquam dolorum aut maiores nisi assumenda debitis cupiditate nemo ipsam distinctio maxime saepe quos provident odit. Voluptates quas, totam minima illo ducimus, ullam accusamus aperiam sint error esse repellat dignissimos magnam. </p>
+                                            <p class="body-1">{{description}}</p>
                                         </v-col>
                                     </v-card-text>
                                 </v-card>
@@ -160,7 +161,8 @@ let Story = {
                     </v-container>
                 </div>`,
     data () { return{
-        pic: './imagenes/fox1.png'
+        pic: './imagenes/fox1.png',
+        description: '"Comprometidos con el desarrollo y mejora constante de las aplicaciones, para determinar un vinculo fuerte de las necesidades de nuestros clientes y su deseo del mejor funcionamiento optimo, poniendo nuestros valores de la metodología ágil Scrum en el proyecto."'
     }
 }
 }
@@ -435,13 +437,13 @@ let Footer = {
                                         <v-btn large fab text color="#DB3D4B" :href="social.href" target="_blank">
                                             <v-icon large>{{social.icon}}</v-icon>
                                         </v-btn>
-                                        <h6><span class="pa-2 white--text">{{social.name}}</span></h6>
+                                        <h6><span class="pa-2 white--text headline">{{social.name}}</span></h6>
                                     </v-list-item>
                                 </v-col>
                                 <v-col md="5">
                                     <v-list-item v-for="dato in datos" :key="dato.name">
                                             <v-icon  large class="pa-4" color="#DB3D4B">{{dato.icon}}</v-icon>
-                                        <h6><span class="pa-2 white--text">{{dato.name}}</span></h6>
+                                        <h6><span class="pa-2 white--text headline">{{dato.name}}</span></h6>
                                     </v-list-item>
                                 </v-col>
                             </v-row>
