@@ -3,15 +3,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./imagenes/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Fox Lab</title>
 </head>
 <body>
     <div id="app">
-       <!--design in components-->
+        <v-app app>
+                <app_bar></app_bar>
+            <v-main>
+                <section id="home">
+                    <home></home>
+                </section>
+                <section id="story">
+                    <story></story>
+                </section>
+                <section id="team">
+                    <team></team>
+                </section>
+                <section id="ourjobs">
+                    <ourjobs></ourjobs>
+                </section>
+                <section id="contact">
+                    <contact></contact>
+                </section>
+            </v-main>
+            <footerfox></footerfox>
+        </v-app>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
