@@ -97,7 +97,7 @@ let Story = {
                             sm="6"
                             md="4">
                                 <v-card flat class="font-weight-medium">
-                                    <v-card-title>
+                                    <v-card-title class="title_t justify-center">
                                             <h3>QUE HACEMOS</h3>
                                     </v-card-title class="font_1">
                                         <v-row align="center">
@@ -141,7 +141,7 @@ let Story = {
                                 md="4">
                                 <v-card flat>
                                     <div class="div-flex">
-                                        <v-card-title >
+                                        <v-card-title class="title_t justify-center">
                                             <v-col>
                                                 <h3>QUIENES SOMOS</h3>
                                             </v-col>

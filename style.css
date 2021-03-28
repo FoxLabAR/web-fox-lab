@@ -129,9 +129,10 @@ span.title{
     border: solid 1px #FF9800;
     font-family: 'tungsten-bold';
 }
-v-card-title {
+.title_t {
     font-size: 30px;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 .col-container {
     margin: 100px;
@@ -139,7 +140,7 @@ v-card-title {
     max-width: 90%; 
     font-family: 'Montserrat'; 
 }
-v-card {
+.v-card {
     font-family: 'Montserrat';
     font-size: 24px;
 }
