@@ -43,7 +43,7 @@ let AppBar = {
                 'Nuestros Trabajos',
                 'Contacto'
             ],
-            pic: './imagenes/logo--white.png',
+            pic: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/logo--white.png',
             drawer: false,
             group: null,
         }
@@ -105,16 +105,16 @@ let Story = {
                                                 <p><span class="font_1"> Disenamos tu pagina web o incluso tu portafolio!</span></p>
                                             </v-col>
                                             <v-col cols="6">
-                                                <v-img height="100" widht="50" id="pic_1" src="./imagenes/Portfolio.png"></v-img>
-                                                <v-img height="100" widht="50" src="./imagenes/Resume.png"></v-img>
+                                                <v-img height="100" widht="50" id="pic_1" src="https://github.com/FoxLabAR/web-fox-lab/tree/main/img/Portfolio.png"></v-img>
+                                                <v-img height="100" widht="50" src="https://github.com/FoxLabAR/web-fox-lab/tree/main/img/Resume.png"></v-img>
                                             </v-col>
                                             <v-col cols="">
                                                 <div class="div-flex">
                                                     <v-col cols="4">
-                                                        <v-img id="pic_2" src="./imagenes/Article.png"></v-img>
+                                                        <v-img id="pic_2" src="https://github.com/FoxLabAR/web-fox-lab/tree/main/img/Article.png"></v-img>
                                                     </v-col>    
                                                     <v-col cols="4">
-                                                        <v-img id="pic_3" src="./imagenes/confirmed.png"></v-img>
+                                                        <v-img id="pic_3" src="https://github.com/FoxLabAR/web-fox-lab/tree/main/img/confirmed.png"></v-img>
                                                     </v-col>
                                                 </div>
                                             </v-col>
@@ -126,7 +126,7 @@ let Story = {
                                                 align="center">Para todos los Dispositivos</span>
                                             </v-col>
                                             <v-col cols="6">
-                                                <v-img src="./imagenes/Web-devices.png"></v-img>
+                                                <v-img src="https://github.com/FoxLabAR/web-fox-lab/tree/main/img/Web-devices.png"></v-img>
                                             </v-col>         
                                         </v-row>
                                 </v-card>
@@ -147,7 +147,7 @@ let Story = {
                                             </v-col>
                                         </v-card-title>
                                         <v-col>
-                                            <v-img id="pic_4" src="./imagenes/FL_miniatura.png"></v-img>
+                                            <v-img id="pic_4" src="https://github.com/FoxLabAR/web-fox-lab/tree/main/img/FL_miniatura.png"></v-img>
                                         </v-col>
                                     </div>
                                     <v-card-text>
@@ -161,7 +161,7 @@ let Story = {
                     </v-container>
                 </div>`,
     data () { return{
-        pic: './imagenes/fox1.png',
+        pic: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/fox1.png',
         description: '"Comprometidos con el desarrollo y mejora constante de las aplicaciones, para determinar un vinculo fuerte de las necesidades de nuestros clientes y su deseo del mejor funcionamiento optimo, poniendo nuestros valores de la metodología ágil Scrum en el proyecto."'
     }
 }
@@ -216,7 +216,7 @@ let Team = {
                 {
                     full_name: 'Fernando Barroso',
                     position: 'CEO',
-                    picture: 'imagenes/fbarroso.jpg',
+                    picture: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/fbarroso.jpg',
                     socials: [
                         { 
                             icon: 'mdi-github',
@@ -231,7 +231,7 @@ let Team = {
                 {
                     full_name: 'Kevin Barroso',
                     position: 'Project Manager',
-                    picture: 'imagenes/kbarroso.jpg',
+                    picture: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/kbarroso.jpg',
                     socials: [
                         { 
                             icon: 'mdi-github',
@@ -250,7 +250,7 @@ let Team = {
                 {
                     full_name: 'Nicolas Ayos',
                     position: 'Developer',
-                    picture: 'imagenes/nayos.jpg',
+                    picture: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/nayos.jpg',
                     socials: [
                         { 
                             icon: 'mdi-github',
@@ -269,7 +269,7 @@ let Team = {
                 {
                     full_name: 'Nikolas Barroso',
                     position: 'Designer',
-                    picture: 'imagenes/nbarroso.jpg',
+                    picture: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/nbarroso.jpg',
                     socials: [
                         { 
                             icon: 'mdi-github',
@@ -284,7 +284,7 @@ let Team = {
                 {
                     full_name: 'Lucas Nuñez',
                     position: 'Designer',
-                    picture: 'imagenes/lnunez.jpg',
+                    picture: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/lnunez.jpg',
                     socials: [
                         { 
                             icon: 'mdi-github',
@@ -362,25 +362,25 @@ let OurJobs = {
                     name: 'Nissan',
                     description:'Fabrica de Autos',
                     url:'https://www.nissan.co.jp/BRAND/PAVILION/',
-                    pic: '/imagenes/nissan.png'
+                    pic: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/nissan.png'
                 },
                 {
                     name:'Right Hemisphere',
                     description: 'Estudio de diseño grafico',
                     url: 'https://www.righthemisphere.in/',
-                    pic: '/imagenes/right.png'
+                    pic: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/right.png'
                 },
                 {
                     name:'Peak',
                     description: 'Social drinks without the hangover',
                     url: 'https://getpeak.social/',
-                    pic: '/imagenes/peak.png'
+                    pic: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/peak.png'
                 },
                 {
                     name:'Nanna Lagerman',
                     description: 'Creative studio specializing',
                     url: 'https://nannalagerman.com/',
-                    pic: '/imagenes/nanna.png'
+                    pic: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/nanna.png'
                 },
             ]
         }
@@ -482,7 +482,7 @@ let Footer = {
                     icon: 'mdi-phone'
                 }
             ],
-            pic: './imagenes/fox_small.png'
+            pic: 'https://github.com/FoxLabAR/web-fox-lab/tree/main/img/fox_small.png'
         }
     },
 }
