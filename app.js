@@ -321,7 +321,7 @@ let OurJobs = {
                                 cols="12"
                                 md="3"                                
                                 >
-                                <v-item v-slot="{ active, toggle }">
+                                <v-hover v-slot="{ hover, toggle }">
                                     <v-card
                                     height="250"
                                     class="ma-3"
@@ -329,8 +329,8 @@ let OurJobs = {
                                     >
                                         <v-img height="250" :src="site.pic">
                                             <v-scroll-y-transition>
-                                                <v-container v-if="active"  class="text-start">
-                                                    <v-card height="200" width="250" class="primary white--text">
+                                                <v-container v-if="hover"  class="text-start">
+                                                    <v-card height="200" width="300" class="primary white--text">
                                                         <v-card-title>
                                                             <h3 class="title">{{site.name}}</h3>
                                                         </v-card-title> 
