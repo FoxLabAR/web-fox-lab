@@ -56,7 +56,7 @@ let AppBar = {
 }
 
 let Home = {
-    template: ` <div>
+    template: ` <div mobile-breakpoint="600">
                     <v-container py-10>
                         <v-row align="center" height="500px">
                             <v-col cols="12">
@@ -78,6 +78,7 @@ let Home = {
         }
     },
 }
+
 
 let Story = {
     template: ` <div>
@@ -318,8 +319,7 @@ let OurJobs = {
                                 v-for="site in sites"
                                 :key="site.name"
                                 cols="12"
-                                md="3"
-                                
+                                md="3"                                
                                 >
                                 <v-item v-slot="{ active, toggle }">
                                     <v-card
@@ -362,25 +362,25 @@ let OurJobs = {
                     name: 'Nissan',
                     description:'Fabrica de Autos',
                     url:'https://www.nissan.co.jp/BRAND/PAVILION/',
-                    pic: '/imagenes/nissan.png'
+                    pic: './imagenes/nissan.png'
                 },
                 {
                     name:'Right Hemisphere',
                     description: 'Estudio de diseño grafico',
                     url: 'https://www.righthemisphere.in/',
-                    pic: '/imagenes/right.png'
+                    pic: './imagenes/right.png'
                 },
                 {
                     name:'Peak',
                     description: 'Social drinks without the hangover',
                     url: 'https://getpeak.social/',
-                    pic: '/imagenes/peak.png'
+                    pic: './imagenes/peak.png'
                 },
                 {
                     name:'Nanna Lagerman',
                     description: 'Creative studio specializing',
                     url: 'https://nannalagerman.com/',
-                    pic: '/imagenes/nanna.png'
+                    pic: './imagenes/nanna.png'
                 },
             ]
         }
@@ -510,12 +510,6 @@ new Vue({
             'footerfox' : Footer
         }
 })
-
-    import Vue from 'vue'
-    import Vuetify from 'vuetify/lib'
-
-    export default new Vuetify({
     breakpoint: {
-        mobileBreakpoint: 'sm'
-  },
-})
+        mobileBreakpoint: 'xs'
+  }
