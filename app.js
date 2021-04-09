@@ -41,7 +41,8 @@ let AppBar = {
                 'Quienes Somos',
                 'Nuestro Equipo',
                 'Nuestros Trabajos',
-                'Contacto'
+                'Contacto',
+                'Quienes'
             ],
             pic: './imagenes/logo--white.png',
             drawer: false,
